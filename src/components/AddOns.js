@@ -1,4 +1,4 @@
-
+import iconsection from '../assets/icon-advanced.svg';
 import React, { useState } from "react";
 import bgImageDesktop from "../assets/bg-sidebar-desktop.svg"; 
 import bgImageMobile from "../assets/bg-sidebar-mobile.svg"; 
