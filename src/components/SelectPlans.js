@@ -135,7 +135,7 @@ const SelectPlan = ({ handleNext, handleBack, activeStep }) => {
         <Box
           sx={{
             display: "flex",
-            gap: 25,
+            gap: 15,
             justifyContent: "space-between",
             alignItems: "center",
             mt: 10,
@@ -149,6 +149,8 @@ const SelectPlan = ({ handleNext, handleBack, activeStep }) => {
               gap: 4,
               justifyContent: "space-between",
               width: { xs: "100%", sm: "auto" },
+              whiteSpace: "nowrap", // Ensures the text doesn't wrap
+    textAlign: "center",
               maxWidth: 100,
             }}
             onClick={handleBack}
@@ -157,19 +159,22 @@ const SelectPlan = ({ handleNext, handleBack, activeStep }) => {
           </Button>
 
           <Button
-            variant="contained"
-            size="medium"
-            sx={{
-              borderRadius: 1,
-              gap: 4,
-              justifyContent: "space-between",
-              width: { xs: "100%", sm: "auto" },
-              maxWidth: 100,
-            }}
-            onClick={handleSubmit}
-          >
-            Next Step
-          </Button>
+  variant="contained"
+  size="medium"
+  sx={{
+    mx: "auto",
+    mt: 4,
+    borderRadius: 1,
+    mt:{xs:0},
+    width: { xs: "70%", md: "40%" },
+    whiteSpace: "nowrap", // Ensures the text doesn't wrap
+    textAlign: "center",
+  }}
+  onClick={handleSubmit}
+>
+  <b>Next Step</b>
+</Button>
+
         </Box>
       </Box>
     </Box>

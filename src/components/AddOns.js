@@ -140,7 +140,8 @@ const AddOns = ({ handleNext, handleBack }) => {
             </Typography>
           </Box>
         ))}
-        <Box sx={{ display: "flex", gap: 30, mt: 10 }}>
+        <Box sx={{ display: "flex", gap: 20, mt: 10 ,whiteSpace: "nowrap", // Ensures the text doesn't wrap
+    textAlign: "center",}}>
           <Button variant="outlined" onClick={handleBack}>
             Go Back
           </Button>
